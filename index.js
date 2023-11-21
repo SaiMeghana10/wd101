@@ -59,14 +59,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const newRow = entriesTableBody.insertRow();
 
     const nameCell = newRow.insertCell(0);
-    const ageCell = newRow.insertCell(1);
-    const emailCell = newRow.insertCell(2);
-    const passwordCell = newRow.insertCell(3);
+    const emailCell = newRow.insertCell(1);
+    const passwordCell = newRow.insertCell(2);
+    const dobCell=newRow.insertCell(3);
     const acceptTermsCell = newRow.insertCell(4);
 
-    nameCell.textContent = formData.name;
-    ageCell.textContent = formData.age;
-    emailCell.textContent = formData.email;
-    passwordCell.textContent = formData.password; 
-    acceptTermsCell.textContent = formData.acceptTerms ? 'True' : 'False';
+      nameCell.textContent = formData.name;
+      emailCell.textContent = formData.email;
+      passwordCell.textContent = formData.password; 
+      dobCell.textContent = formData.dob;
+      acceptTermsCell.textContent = formData.acceptTerms ? 'True' : 'False';
   }
